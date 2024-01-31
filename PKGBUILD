@@ -1,4 +1,8 @@
+# SPDX-License-Identifier: AGPL-3.0
 # Maintainer: Danilo J. S. Bellini <danilo dot bellini at gmail dot com>
+# Contributor:  Truocolo <truocolo@aol.com>
+# Contributor:  Pellegrino Prevete <cGVsbGVncmlub3ByZXZldGVAZ21haWwuY29tCg== | base -d>
+
 pkgname=python2-pbr
 _name="${pkgname#python2-}"
 pkgver=5.9.0
@@ -23,3 +27,5 @@ package() {
   install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE.txt"
   mv "$pkgdir/usr/bin/pbr"{,2}
 }
+
+# vim:set sw=2 sts=-1 et:
